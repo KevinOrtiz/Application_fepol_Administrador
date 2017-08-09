@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Administrador Ayudantias Fepol</title>
+    {{> file_link}}
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          {{> menu_left}}
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          {{> menu_nav}}
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="row tile_count">
+            <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total de Estudiantes Registrados</span>
+              <div class="count green">3000</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-clock-o"></i>Total de Materias Registradas</span>
+              <div class="count green">40</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total de Ayudantes Registrados</span>
+              <div class="count green">15</div>
+            </div>
+          </div>
+          <!-- /top tiles -->
+
+         <!-- Informacion de cada actividad , materias,profesor-->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:300px">
+              <div class="dashboard_graph">
+                <div class="row x_title">
+                  <div class="col-md-12">
+                    <h3>Ayudantias Recientes</h3>
+                  </div>
+                  <div class="col-md-2" style="margin-left:20px">
+                    <h5>Ayudantia 1</h5>
+                  </div>
+                  <div class="col-md-4" style="margin-left:20px">
+                    <h5>10/09/2017;19:00:00</h5>
+                  </div>
+                  <div class="col-md-4" style="margin-left:0.3em">
+                    <h5>10/10/2017;20:00:00</h5>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+              </div>
+            </div>
+
+          </div>
+          <br />
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Administrador de ayudantias de la Federacion de Estudiantes politecnicos del Litoral.
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    {{> file_script}}
+	
+  </body>
+</html>

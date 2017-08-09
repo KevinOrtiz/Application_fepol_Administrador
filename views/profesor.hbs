@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Administrador Ayudantias Fepol</title>
+    {{> file_link}}
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          {{> menu_left}}
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          {{> menu_nav}}
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+         <!-- Informacion de cada actividad , materias,profesor-->
+         <div class="page-title">
+           <div class="title_left">
+              <h3>
+                Ayudantes
+              </h3>
+           </div>
+
+         </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <!-- Mostrar Modales-->
+                <div class="modal fade" id="myModalProfesor" role='dialog'>
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="x_title">
+                                <h2>Registrar Profesor</h2>
+                                <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                {{> registro_profesor}}
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="reset" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalProfesor">Agregar Profesor</button>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                {{> tablas_profesor}}
+            </div>
+
+          </div>
+          <br />
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+              Administrador de ayudantias de la Federacion de Estudiantes politecnicos del Litoral.
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    {{> file_script}}
+	
+  </body>
+
+  <script type="text/javascript" >
+      $(document).ready(function(){
+    $('#datatable').DataTable();
+    });
+  </script>
+</html>

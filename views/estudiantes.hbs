@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Administrador Ayudantias Fepol</title>
+    {{> file_link}}
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          {{> menu_left}}
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          {{> menu_nav}}
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+         <!-- Informacion de cada actividad , materias,profesor-->
+         <div class="page-title">
+           <div class="title_left">
+              <h3>
+                Estudiantes
+              </h3>
+           </div>
+
+         </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <button type="button" class="btn btn-primary">Descargar Excel de listado de estudiantes</button>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <!-- Aqui mostramos tablas de estudiantes-->
+                {{> tablas_estudiantes}}
+            </div>
+          </div>
+          <br />
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+                Administrador de ayudantias de la Federacion de Estudiantes politecnicos del Litoral.
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    {{> file_script}}
+	
+  </body>
+
+  <script type="text/javascript" >
+      $(document).ready(function(){
+    $('#datatable').DataTable();
+    });
+  </script>
+</html>

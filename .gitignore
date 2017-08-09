@@ -1,0 +1,4 @@
+**/node_modules
+**/public/lib
+/command.txt
+.DS_Store

@@ -1,0 +1,39 @@
+{
+  "name": "sistema_registro_ayudantias",
+  "version": "0.0.1",
+  "description": "Esta aplicacion contendra los modulos de registro de ayudantias,modulos de times, y funcionalidad de testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinOrtiz/Aplication_Web_Fepol.git"
+  },
+  "author": "Kevin Andres Ortiz Merchan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KevinOrtiz/Aplication_Web_Fepol/issues"
+  },
+  "homepage": "https://github.com/KevinOrtiz/Aplication_Web_Fepol#readme",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "jshint": "^2.9.5",
+    "mocha": "^3.4.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gitignore": "^0.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
